@@ -345,22 +345,28 @@ if (typeof x === "string") {
 
 Quick links to detailed guidelines:
 
-1. **[TypeScript Guidelines](./docs/typescript-guidelines.md)**
+1. **[Authentication Guidelines](./docs/authentication-guidelines.md)**
+   - Clerk integration, protected routes, sign in/out modals, security best practices
+
+2. **[shadcn/ui Component Guidelines](./docs/shadcn-ui-guidelines.md)**
+   - All UI elements use shadcn/ui, composition patterns, no custom components, Tailwind integration
+
+3. **[TypeScript Guidelines](./docs/typescript-guidelines.md)**
    - Type safety rules, function declarations, interfaces, generics
 
-2. **[React & Next.js Guidelines](./docs/react-nextjs-guidelines.md)**
+4. **[React & Next.js Guidelines](./docs/react-nextjs-guidelines.md)**
    - Component structure, Server/Client boundaries, data fetching, forms
 
-3. **[Database & Drizzle Guidelines](./docs/database-guidelines.md)**
+5. **[Database & Drizzle Guidelines](./docs/database-guidelines.md)**
    - Schema design, relationships, queries, migrations, optimization
 
-4. **[Styling & CSS Guidelines](./docs/styling-guidelines.md)**
+6. **[Styling & CSS Guidelines](./docs/styling-guidelines.md)**
    - Tailwind usage, shadcn/ui components, dark mode, accessibility
 
-5. **[Code Organization Guidelines](./docs/code-organization.md)**
+7. **[Code Organization Guidelines](./docs/code-organization.md)**
    - Directory structure, file naming, imports, comments, exports
 
-6. **[Naming Conventions](./docs/naming-conventions.md)**
+8. **[Naming Conventions](./docs/naming-conventions.md)**
    - Variables, functions, components, database columns, API routes
 
 ## Questions & Updates
