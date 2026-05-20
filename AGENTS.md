@@ -14,15 +14,38 @@ This document defines the coding standards, best practices, and development guid
 - **Authentication:** Clerk
 - **Build Tools:** ESLint 9, PostCSS
 
+## ⚠️ CRITICAL: MANDATORY DOCUMENTATION REVIEW
+
+**🚨 BEFORE GENERATING ANY CODE:**
+
+1. **ALWAYS read the relevant individual instruction files in `/docs`**
+2. **EVERY code generation task REQUIRES prior review of applicable guidelines**
+3. **Do NOT skip this step under any circumstances**
+4. **Failure to review guidelines will result in non-compliant code**
+
+This is not optional. The `/docs` directory contains essential, specific requirements for:
+
+- TypeScript patterns and type safety
+- React & Next.js component structure
+- Database schema and query patterns
+- Styling and UI component usage
+- Authentication implementation
+- Code organization and file naming
+
+**Match your task to the correct guideline file, read it completely, then code.**
+
+---
+
 ## Quick Start for LLMs
 
 ### How to Use These Guidelines
 
-1. **Read this file first** - understand the project structure and key principles
-2. **Reference the `/docs` directory** for detailed guidelines.ALWAYS refer to relavant .md file BEFORE generating code:
-
-3. **Always apply relevant guidelines** when creating or modifying code
-4. **Ask for clarification** when guidelines seem ambiguous
+1. **Read this file first** - understand the project structure and core principles
+2. **Identify your task type** - creating components, adding features, styling, etc.
+3. **ALWAYS read the relevant `/docs/*.md` file** BEFORE writing ANY code
+4. **Follow the specific patterns and examples** from the documentation
+5. **Apply relevant guidelines** consistently throughout your implementation
+6. **Ask for clarification** if guidelines seem ambiguous or conflicting
 
 ### Core Principles
 
@@ -268,9 +291,20 @@ public/                          # Static assets
 
 ## LLM-Specific Instructions
 
+### ⚠️ MANDATORY: Read Docs Before Coding
+
+**For EVERY coding task:**
+
+- [ ] **Identify the relevant guideline file in `/docs`**
+- [ ] **Read the ENTIRE file before writing code**
+- [ ] **Apply the specific patterns and examples from that file**
+- [ ] Do NOT rely on general knowledge - follow the project-specific guidelines
+- [ ] Do NOT skip this step
+
 ### Before Writing Code
 
 - [ ] Understand the feature requirements
+- [ ] **MUST read relevant `/docs/*.md` file(s)**
 - [ ] Check for existing components that could be reused
 - [ ] Review relevant guideline section(s)
 - [ ] Plan the implementation (types, structure, flow)
@@ -295,7 +329,8 @@ public/                          # Static assets
 
 ### When Uncertain
 
-- Reference the specific guideline document
+- **ALWAYS check the relevant guideline document first** - this is the source of truth
+- Reference existing code patterns in the codebase
 - Look for similar patterns in the codebase
 - Ask clarifying questions
 - Default to stricter/safer choices (explicit types, Server Components, etc.)

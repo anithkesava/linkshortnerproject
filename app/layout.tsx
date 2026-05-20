@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider, SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
+import { Button } from "@/components/ui/button";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -26,14 +29,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-white dark:bg-neutral-950 text-black dark:text-white">
         <ClerkProvider>
-          <header>
+          <header className="flex justify-end items-center gap-4 p-4 bg-white dark:bg-neutral-900 border-b border-zinc-200 dark:border-zinc-800">
             <Show when="signed-out">
-              <SignInButton />
-              <SignUpButton />
+              <Button asChild>
+                <SignInButton />
+              </Button>
+              <Button asChild>
+                <SignUpButton />
+              </Button>
             </Show>
             <Show when="signed-in">
               <UserButton />
