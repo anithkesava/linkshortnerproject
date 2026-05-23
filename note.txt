@@ -1,0 +1,6 @@
+since the background or cloud agent are unavailable in local machine 
+we cannot able to run this prompt : 
+
+"implement the homepage which should be a 
+landing page highlighting the feature of this app"
+
